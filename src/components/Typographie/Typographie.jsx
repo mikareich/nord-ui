@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { blue, breakpoints, grey, typeScale } from "../utils";
+import { blue, breakpoints, grey, typeScale } from "../../utils";
 
 export const subtitleStyle = (props) => css`
   color: ${props.theme.textColorLight};
