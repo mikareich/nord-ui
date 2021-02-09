@@ -14,7 +14,7 @@ import {
   Heading0,
   Heading5,
 } from "./components";
-import { Input } from "./components/Input";
+import { Input } from "./components/Input/Input";
 import { darkTheme, lightTheme } from "./utils";
 
 const inlineStyle = {
