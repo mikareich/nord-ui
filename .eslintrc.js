@@ -3,14 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "react-app",
-    "react-app/jest",
-    "plugin:react/recommended",
-    "airbnb",
-    "prettier",
-    "prettier/react",
-  ],
+  extends: ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -20,8 +13,6 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "no-unused-vars": "warn",
     "import/prefer-default-export": "off",
-    "react/prop-types": "off",
   },
 };

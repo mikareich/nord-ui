@@ -1,0 +1,91 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import { Button } from "./Button";
+import { Plus } from "heroicons-react";
+
+<Meta title="Nord UI | Button" />
+
+# Buttons
+
+Buttons are used to interact with the user. To make this possible,
+the user must first understand that the button can be actively used.
+To do this, it should stand out from the environment, e.g. through color.
+In addition, the user should be told succinctly what to do with the button.
+Therefore, the button must always be provided with an icon or word that
+explains the function of this button to the user. A combination of icon and
+text is often suitable.
+The basic element of the button is `<Button>...</Button>`.
+
+## Contained Button
+
+Contained buttons are identified by their color fill. The fill color in the
+normal state is `primaryColor`, in hover or active state `primaryColorAccent1`
+and in the focus state `primaryColorAccent2`. This color fill makes this button type
+type look very distinctive and slightly eye-catching. This is the normal state of the
+button, so it is not necessary to add an attribute. However, if you still want to
+want to add an attribute, it is `contained`. Also, they cannot be combined with the
+`outlined` attribute, because they belong to the _main button types_.
+
+<Story name="Contained" default>
+  <Button contained>Button</Button>
+</Story>
+
+`<Button>Button</Button>` or `<Button contained>Button</Button>`
+
+## Outlined Button
+
+Outlined buttons belong to the _main button types_ and cannot be combined with the
+`contained` attribute. They have a colored border and an icon or text field. Their background
+is normally transparent, in hover or active state it changes to the 90% transparent
+variable `primaryColor` and in focus state to the 70% transparent variable `primaryColor`.
+Thus this button type is much more inconspicuous than the [Contained Button](#contained-button). To
+create this button you need the attribute `outlined`.
+
+<Story name="Outlined">
+  <Button outlined>Button</Button>
+</Story>
+
+`<Button outlined>Button</Button>`
+
+## Icon Button
+
+Icon buttons belong to the _additional button types_ and can get either the `contained` or `outlined`
+attribute. If they get the `contained` attribute or neither, they apply the style of the
+[Contained Button](#contained-button), if they get the `outlined` attribute, they apply the style of the
+[Outlined Button](#outlined-button). Regardless of this, they identify themselves by at least one icon as
+a label. Often these buttons contain another text label to make the function of the button even clearer.
+Otherwise, the [Floating Action Button](#floating-action-button) is recommended.
+
+<Story name="Icon">
+  <Button>
+    <Plus size="18" /> Button
+  </Button>
+</Story>
+
+`<Button> <Plus size="18" /> Button </Button>` or `<Button outlined> <Plus size="18" /> Button </Button>`
+
+\* The component `<Plus />` is a [Heroku icon](https://github.com/impulse/heroicons-react)
+
+## Rounded Button
+
+Rounded buttons are _additional button types_, so they can be given the attributes
+`contained` or `outlined` and change accordingly [see Icon Button](#icon-button). They are
+characterized only by their completely rounded edges.
+
+<Story name="Rounded">
+  <Button rounded>Button</Button>
+</Story>
+
+`<Button rounded>Button</Button>`
+
+## Floating Action Button
+
+Floating Actions Buttons also belong to the _additional Button types_ [see Icon Button](#icon-button).
+Therefore they can also get the attributes `contained` or `outlined` and apply the corresponding
+design. Floating Action Buttons are also abbreviated FAB and have a circular design. Thus,
+only one icon is suitable as a label. The corresponding attribute for this button is `fab`.
+
+<Story name="FAB">
+  <Button fab>
+    <Plus />
+  </Button>
+</Story>
