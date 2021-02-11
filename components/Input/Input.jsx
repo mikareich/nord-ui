@@ -1,4 +1,4 @@
-/** @jsxImportSource @emotion/react */
+/** @jsx jsx */
 /* eslint-disable react/jsx-props-no-spreading */
 import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/react";

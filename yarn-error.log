@@ -1,0 +1,76 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add prettier
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: connect ECONNREFUSED 104.16.21.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+
+npm manifest: 
+  {
+    "name": "nord-ui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "@babel/core": "^7.12.13",
+      "@babel/preset-env": "^7.12.13",
+      "@babel/preset-react": "^7.12.13",
+      "@emotion/react": "^11.1.5",
+      "@emotion/styled": "^11.1.5",
+      "babel-loader": "^8.2.2",
+      "html-webpack-plugin": "^5.0.0",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "webpack": "^5.21.2",
+      "webpack-cli": "^4.5.0"
+    },
+    "devDependencies": {
+      "@storybook/addon-actions": "^6.1.17",
+      "@storybook/addon-essentials": "^6.1.17",
+      "@storybook/addon-links": "^6.1.17",
+      "@storybook/react": "^6.1.17",
+      "eslint": "^7.19.0",
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-config-prettier": "^7.2.0",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-react": "^7.22.0",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "prettier": "^2.2.1",
+      "storybook-addon-emotion-theme": "^2.1.1"
+    },
+    "scripts": {
+      "build": "webpack build",
+      "storybook": "start-storybook -p 6006",
+      "build-storybook": "build-storybook"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mikareich/nord-ui.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/mikareich/nord-ui/issues"
+    },
+    "homepage": "https://github.com/mikareich/nord-ui#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

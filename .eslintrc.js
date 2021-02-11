@@ -13,8 +13,6 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "no-unused-vars": "warn",
     "import/prefer-default-export": "off",
-    "react/prop-types": "off",
   },
 };
