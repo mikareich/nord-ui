@@ -1,0 +1,25 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import { Input } from "./Base.Input";
+import { CakeOutline, Eye } from "heroicons-react";
+
+<Meta title="Inputs" />
+
+# Inputs
+
+## Filled Input
+
+<Story name="Filled">
+  <Input
+    prefix={<CakeOutline size="18" />}
+    type="date"
+    helper="Enter your birthday"
+    placeholder="Birthday"
+    autoFocus
+  />
+</Story>
+
+## Outlined Input
+
+<Story name="Outlined">
+  <Input outlined />
+</Story>

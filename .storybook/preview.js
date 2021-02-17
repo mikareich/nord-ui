@@ -6,7 +6,7 @@ addDecorator(withThemesProvider([lightTheme, darkTheme]));
 
 export const parameters = {
   backgrounds: {
-    default: "twitter",
+    default: "Light Theme",
     values: [
       {
         name: "Light Theme",

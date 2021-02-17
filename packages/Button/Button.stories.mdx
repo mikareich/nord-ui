@@ -2,7 +2,7 @@ import { Meta, Story } from "@storybook/addon-docs/blocks";
 import { Button } from "./Button";
 import { Plus } from "heroicons-react";
 
-<Meta title="Nord UI | Button" />
+<Meta title="Button" />
 
 # Buttons
 
@@ -15,17 +15,17 @@ explains the function of this button to the user. A combination of icon and
 text is often suitable.
 The basic element of the button is `<Button>...</Button>`.
 
-## Contained Button
+## Filled Button
 
-Contained buttons are identified by their color fill. The fill color in the
+Filled buttons are identified by their color fill. The fill color in the
 normal state is `primaryColor`, in hover or active state `primaryColorAccent1`
 and in the focus state `primaryColorAccent2`. This color fill makes this button type
 type look very distinctive and slightly eye-catching. This is the normal state of the
 button, so it is not necessary to add an attribute. However, if you still want to
-want to add an attribute, it is `contained`. Also, they cannot be combined with the
+want to add an attribute, it is `filled`. Also, they cannot be combined with the
 `outlined` attribute, because they belong to the _main button types_.
 
-<Story name="Contained" default>
+<Story name="Filled" default>
   <Button contained>Button</Button>
 </Story>
 
